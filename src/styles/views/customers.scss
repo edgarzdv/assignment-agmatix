@@ -1,0 +1,11 @@
+.customers {
+    padding: 20px 80px;
+    
+    .md-table {
+        border: 0.5px solid $primary;
+    }
+
+    td {
+        text-align: left;
+    }
+}

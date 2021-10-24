@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    box-shadow: 0 2px 5px -2px $primary;
+}
+img {
+    max-width: 250px;
+}
+
+.right,
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.router-link-active {
+    position: relative;
+    font-family: $primary_font;
+    font-size: 16px;
+    color: $secondary;
+}
+
+.router-link-active::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: $secondary;
+    border-radius: 50px;
+    bottom: -23px;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+}
+a {
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    color: $primary;
+    font-family: $primary_font;
+    font-size: 16px;
+    padding: 13px 10px;
+    font-family: $primary_font_bold;
+}
+
